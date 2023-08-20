@@ -1,0 +1,38 @@
+.Chair {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #D84315;
+    border-radius: 6px;
+    width: 40px;
+    height: 40px;
+    margin-top: 12px;
+
+    &:hover {
+        background-color: #D84315;
+        border: transparent;
+        transition: all .5s;
+        color: white;
+        cursor: pointer;
+    }
+
+    &.booking {
+        background-color: #00C853;
+        border: transparent;
+        color: white;
+    }
+
+    &.booked {
+        background-color: #616161;
+        border: transparent;
+        color: white;
+        pointer-events: none;
+    }
+
+    &.disabled {
+        border: transparent;
+        pointer-events: none;
+        font-weight: bold;
+        font-size: 20px;
+    }
+}
